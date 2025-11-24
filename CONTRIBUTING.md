@@ -1,4 +1,4 @@
-# CALL_GRAPH 
+# CALL_GRAPH — Diagram pemanggilan lengkap (ASCII) dan penjelasan
 
 ---
 
@@ -14,6 +14,7 @@
 
 ## Diagram ASCII (tingkat 1 — high level)
 
+```text
 [customer phone]
     |
     | scans QR
@@ -39,11 +40,13 @@ Admin flow:
         -> (ctrl) Admin\PesananController@updateStatus
             -> update {model} Pesanan
             -> if (waiting_payment -> processing) -> <svc> WhatsappService->sendMessageToCustomer(phone, message)
+```
 
 ---
 
 ## Diagram ASCII (tingkat 2 — lengkap dengan file pemanggil)
 
+```text
 +--------------------------------------------------------------------------------+
 |                             Customer (browser)                                 |
 +--------------------------------------------------------------------------------+
@@ -59,8 +62,8 @@ Admin flow:
 +--------------------------------------------------------------------------------+
 | Route: POST /order/store -> app/Http/Controllers/OrderController.php@store     |
 |   - Validates request payload                                                   |
-|   - Table::where('token', $token) -> verify table                               |
-|   - calculate total from items                                                  |
+|   - Table::where('token', $token) -> verify table                              |
+|   - calculate total from items                                                 |
 |   - Pesanan::create([...])  (saves to DB, items as JSON)                        |
 |   - Calls: app/Services/WhatsappService::sendMessageToAdmin(message)            |
 +--------------------------------------------------------------------------------+
@@ -69,6 +72,7 @@ Admin flow:
 +--------------------------------------------------------------------------------+
 |                         External: WhatsApp API (via Http::post)                |
 +--------------------------------------------------------------------------------+
+```
 
 
 ---
@@ -146,3 +150,5 @@ Berikut file yang sering dipakai untuk membuat slide atau demo. Buka path ini ji
 - `routes/web.php` — sumber mapping route yang dipakai di demo.
 
 ---
+
+Jika mau, saya bisa juga buat folder `presentation_assets/` dengan screenshot dan teks presentasi otomatis.
