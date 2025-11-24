@@ -58,7 +58,7 @@ Admin flow:
 |                             Server (HTTP)                                      |
 +--------------------------------------------------------------------------------+
 | Route: POST /order/store -> app/Http/Controllers/OrderController.php@store     |
-|   - Validates request payload                                                    |
+|   - Validates request payload                                                   |
 |   - Table::where('token', $token) -> verify table                               |
 |   - calculate total from items                                                  |
 |   - Pesanan::create([...])  (saves to DB, items as JSON)                        |
@@ -146,5 +146,3 @@ Berikut file yang sering dipakai untuk membuat slide atau demo. Buka path ini ji
 - `routes/web.php` — sumber mapping route yang dipakai di demo.
 
 ---
-
-Jika mau, saya bisa juga buat folder `presentation_assets/` dengan screenshot dan teks presentasi otomatis.
