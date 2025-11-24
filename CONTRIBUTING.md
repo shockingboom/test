@@ -150,5 +150,3 @@ Berikut file yang sering dipakai untuk membuat slide atau demo. Buka path ini ji
 - `routes/web.php` — sumber mapping route yang dipakai di demo.
 
 ---
-
-Jika mau, saya bisa juga buat folder `presentation_assets/` dengan screenshot dan teks presentasi otomatis.
