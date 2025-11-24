@@ -1,8 +1,4 @@
-# CALL_GRAPH — Diagram pemanggilan lengkap (ASCII) dan penjelasan
-
-Tujuan: dokumentasi ini menampilkan alur pemanggilan fitur utama (cart/order/table/WA) dalam bentuk teks ASCII yang mudah dibaca, beserta penjelasan singkat setiap node.
-
-File lokasi: root proyek: `CALL_GRAPH.md`
+# CALL_GRAPH 
 
 ---
 
