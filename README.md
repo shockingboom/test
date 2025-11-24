@@ -88,11 +88,3 @@ admin dashboard
 - Jika ada perubahan pada nama tabel database (mis. produk), sesuaikan validasi di server.
 
 ---
-
-Jika Anda mau, saya bisa:
-
-- Tambahkan diagram visual (Mermaid) untuk dipakai di slide.
-- Buat versi presentasi singkat (4 slide) dengan narasi.
-- Tambahkan contoh teks WhatsApp yang dikirim.
-
-Pilih salah satu supaya saya lanjutkan.
